@@ -2,7 +2,7 @@
 
 Blog com rotas dinâmicas por artigo, busca de dados em **Server Components**, geração estática (**SSG**) e **SEO dinâmico** com `generateMetadata`. Exercício do Módulo 23 do curso de Front-End da EBAC.
 
-**Aplicação no ar:** _link do Vercel aqui_
+**Aplicação no ar:** https://2311-blog-next.vercel.app
 
 ## Como os requisitos foram atendidos
 
@@ -46,7 +46,7 @@ npm run build && npm start # versão de produção
 
 ## Deploy
 
-Publicado no Vercel com o projeto importado do GitHub. Cada push na `main` gera um deploy novo.
+Publicado no Vercel (https://2311-blog-next.vercel.app) com a CLI: `npx vercel --prod`. Para ter deploy automático a cada push, conecte o repositório em Vercel → Project → Settings → Git.
 
 ## Tecnologias
 
