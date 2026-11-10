@@ -1,0 +1,50 @@
+[
+  {
+    "titulo": "Por que aprender Next.js em 2026",
+    "autor": "Ahlen Frigeri",
+    "data": "2026-10-05",
+    "resumo": "Rotas por arquivo, Server Components e deploy simples: os motivos que fazem do Next.js o framework React mais usado no mercado.",
+    "conteudo": [
+      "O Next.js nasceu para resolver um problema antigo do React: aplicações que só existem no navegador demoram para aparecer e são difíceis de indexar no Google.",
+      "Com o App Router, cada pasta dentro de app/ vira uma rota. Não existe arquivo de configuração de rotas: a estrutura de pastas já é o mapa do site.",
+      "Os Server Components buscam dados direto no servidor. O navegador recebe o HTML pronto, com menos JavaScript para baixar.",
+      "Por fim, publicar é simples: conecte o repositório do GitHub ao Vercel e cada push na branch principal gera um novo deploy."
+    ]
+  },
+  {
+    "titulo": "SSG ou SSR: qual escolher?",
+    "autor": "Ahlen Frigeri",
+    "data": "2026-10-12",
+    "resumo": "Entenda a diferença entre gerar páginas no build e gerar a cada requisição, e quando usar cada estratégia.",
+    "conteudo": [
+      "SSG (Static Site Generation) gera o HTML uma única vez, no momento do build. A página fica pronta num CDN e abre muito rápido.",
+      "SSR (Server-Side Rendering) gera o HTML a cada requisição. É a escolha certa quando o conteúdo muda o tempo todo ou depende de quem está acessando.",
+      "Num blog, os artigos mudam pouco. Por isso este projeto usa SSG com generateStaticParams: todas as URLs de artigos são conhecidas e geradas no build.",
+      "Se um dia os artigos vierem de uma API que muda a cada minuto, basta trocar para export const dynamic = 'force-dynamic'."
+    ]
+  },
+  {
+    "titulo": "SEO dinâmico com generateMetadata",
+    "autor": "Ahlen Frigeri",
+    "data": "2026-10-19",
+    "resumo": "Como dar a cada página um título e uma descrição próprios para aparecer melhor nos buscadores e nas redes sociais.",
+    "conteudo": [
+      "Buscadores como o Google usam a tag title e a meta description para montar o resultado da pesquisa. Páginas com o mesmo título competem entre si.",
+      "No App Router, a função generateMetadata recebe os parâmetros da rota e devolve um objeto com title, description e openGraph.",
+      "Como ela roda no servidor, pode buscar o artigo pelo slug e usar o próprio título e resumo do texto.",
+      "O resultado é que cada artigo tem metadados únicos sem nenhuma configuração manual."
+    ]
+  },
+  {
+    "titulo": "Publicando no Vercel em 5 minutos",
+    "autor": "Ahlen Frigeri",
+    "data": "2026-10-26",
+    "resumo": "O passo a passo para colocar uma aplicação Next.js no ar, com HTTPS e deploy automático.",
+    "conteudo": [
+      "Crie uma conta no Vercel usando o login do GitHub.",
+      "Clique em Add New Project e importe o repositório. O Vercel reconhece o Next.js sozinho e já preenche os comandos de build.",
+      "Clique em Deploy. Em cerca de um minuto a aplicação está no ar com um endereço .vercel.app e HTTPS.",
+      "A partir daí, todo push na branch main gera um deploy novo, e cada pull request ganha um link de pré-visualização."
+    ]
+  }
+]
